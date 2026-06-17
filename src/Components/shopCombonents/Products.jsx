@@ -76,7 +76,7 @@ const changePage = (page) => {
             navigate(`/Product/${el.id}`)
             
           }} key={index} className={`p-5 flex rounded-lg hover:shadow-lg bg-white  ${row ? "flex-col" : "flex-row gap-5"}`}>
-        <div className={`aspect-square mb-2 overflow-hidden ${row?"":"w-48 flex-shrink-0 overflow-hidden"}`}>
+        <div className={`aspect-square mb-2 overflow-hidden ${row?"":"lg:w-48 md:w-48 w-28 flex-shrink-0 overflow-hidden"}`}>
 <img 
   className="w-full h-full  transition-transform duration-200 hover:scale-110" 
   src={`${import.meta.env.BASE_URL}img/${el.image}`}
