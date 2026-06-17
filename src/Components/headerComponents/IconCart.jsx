@@ -13,7 +13,7 @@ export default function IconCart({buttonRef,setopn}) {
               <div className="flex items-center gap-1">
 <ShoppingCart className="text-blue-600 h-6 w-6" />   
      <p className="text-blue-600">السلة</p>
-     <p className={`absolute right-14 bottom-4 px-2 rounded-[50%] bg-red-600 text-white ${cart.length>0?"block":"hidden"}`}>{cart.length}</p>
+     <p className={`absolute left-24 bottom-3 px-2 text-[16px]  rounded-[50%] bg-red-600 text-white ${cart.length>0?"block":"hidden"}`}>{cart.length}</p>
       </div>
       </Link>
         <AlignJustify 
