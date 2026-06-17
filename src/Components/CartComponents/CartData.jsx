@@ -11,7 +11,7 @@ export default function CartData() {
           return (
             <div className="flex lg:flex-row md:flex-row flex-col gap-4 p-4 bg-white rounded-lg shadow-lg">
               <div className="flex-shrink-0">
-                <img className="w-24 h-24 object-cover rounded" src={`/img/${el.image}`} alt="" />
+                <img className="w-24 h-24 object-cover rounded" src={`${import.meta.env.BASE_URL}img/${el.image}`} alt="" />
               </div>
               <div>
                 <p className="font-bold hover:text-blue-600 transition">{el.name}</p>

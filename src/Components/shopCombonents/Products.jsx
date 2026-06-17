@@ -79,7 +79,7 @@ const changePage = (page) => {
         <div className={`aspect-square mb-2 overflow-hidden ${row?"":"w-48 flex-shrink-0 overflow-hidden"}`}>
 <img 
   className="w-full h-full  transition-transform duration-200 hover:scale-110" 
-  src={`/img/${el.image}`} 
+  src={`${import.meta.env.BASE_URL}img/${el.image}`}
   alt="" 
 />            
             </div>

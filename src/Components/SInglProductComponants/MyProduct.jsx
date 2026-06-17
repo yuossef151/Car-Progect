@@ -53,7 +53,7 @@ export default function MyProduct() {
           <div className="aspect-square rounded-lg overflow-hidden bg-gray-100">
             <img
               className="w-full h-full object-cover"
-              src={`/img/${product.image}`}
+              src={`${import.meta.env.BASE_URL}img/${product.image}`}
               alt=""
             />
           </div>
