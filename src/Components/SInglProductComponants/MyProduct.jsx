@@ -114,7 +114,7 @@ export default function MyProduct() {
               {features.map((el, index) => (
                 <div
                   key={index}
-                  className="flex flex-col grow items-center gap-2 bg-blue-50 p-6 rounded-xl"
+                  className="flex flex-col grow items-center gap-2 bg-blue-50 lg:p-6 md:p-4 px-2 text-center py-4 rounded-xl"
                 >
                   {el.icon}
                   <p className="text-sm font-medium text-gray-700">
