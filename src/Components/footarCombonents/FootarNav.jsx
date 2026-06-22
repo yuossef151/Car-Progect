@@ -49,13 +49,13 @@ name:" الشحن والتوصيل",
     ]
     const nav3 =[
         {
-name:"+966 50 123 4567",
+name:"01554321319",
 img:<Phone className="h-4 w-4" />        },
         {
-name:"info@autoparts.sa",
+name:"yuossefgaafar07@gmail.com",
  img: <Mail className="h-4 w-4" />,        },
         {
-name:"الرياض، المملكة العربية السعودية",
+name:" القاهره  ",
 img: <MapPin className="h-4 w-4" />,        },
     ]
   return (
@@ -85,8 +85,9 @@ img: <MapPin className="h-4 w-4" />,        },
                 })
             }
             <div className='flex gap-4 pt-4'>
+<a href={"https://www.facebook.com/youssef.ak.94376"} target="_blank" >
                 <FaFacebook  className='text-[#b1b0b0] hover:text-blue-600 w-5 h-5' />
-                <FaInstagram  className='text-[#b1b0b0] hover:text-pink-400 w-5 h-5' />
+</a>                <FaInstagram  className='text-[#b1b0b0] hover:text-pink-400 w-5 h-5' />
                 <FaXTwitter   className='text-[#b1b0b0] hover:text-black w-5 h-5' />
             </div>
         </ul>
