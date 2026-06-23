@@ -64,7 +64,23 @@ const removeFromCart = (id) => {
     localStorage.setItem("mycart", JSON.stringify(newCart));
     return newCart;
   });
-};
+
+      Swal.fire({
+      title: '',
+      text:   'تمت ازالة المنتج من السلة ',
+      icon: 'success',
+      toast: true,
+      position: 'top-end',
+      timer: 2000,
+      timerProgressBar: true,
+      showConfirmButton: false,
+      background: '#1a2540',
+      color: '#ffffff',
+      iconColor: '#ef4444',
+    });
+  }
+
+
 
 const clearCart = () => {
   setCart([]);
