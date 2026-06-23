@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import { cart as initialCart } from "./shopCombonents/data";
+import Swal from "sweetalert2";
 
 const CartContext = createContext();
 
@@ -26,6 +27,23 @@ export function CartProvider({ children }) {
       localStorage.setItem("mycart", JSON.stringify(newCart));
       return newCart;
     });
+
+    Swal.fire({
+  title: 'تمت الإضافة! 🛒',
+  text: 'تمت اضافة المنتج بنجاح',
+  icon: 'success',
+  toast: true,
+  position: 'top-end',
+  timer: 3000,
+  timerProgressBar: true,
+  showConfirmButton: false,
+  background: '#1a2540',     // نفس الـ dark navy بتاع الفوتر
+  color: '#ffffff',
+  iconColor: '#3b82f6',      // أزرق زي أزرار موقعك
+  customClass: {
+    popup: 'rtl-toast'
+  }
+});
   };
 
 const updateQuantity = (id, amount) => {

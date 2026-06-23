@@ -8,12 +8,12 @@ export default function IconCart({buttonRef,setopn}) {
   return (
     <>
 
-      <div className="flex gap-5 relative">
+      <div className="flex gap-5 ">
 <Link to={"cart"}>
-              <div className="flex items-center gap-1">
+              <div className="flex relative items-center gap-1">
 <ShoppingCart className="text-blue-600 h-6 w-6" />   
      <p className="text-blue-600">السلة</p>
-     <p className={`absolute left-24 bottom-3 px-2 text-[16px]  rounded-[50%] bg-red-600 text-white ${cart.length>0?"block":"hidden"}`}>{cart.length}</p>
+     <p className={`absolute left-12 bottom-4 px-2 text-[16px]  rounded-[50%] bg-red-600 text-white ${cart.length>0?"block":"hidden"}`}>{cart.length}</p>
       </div>
       </Link>
         <AlignJustify 
